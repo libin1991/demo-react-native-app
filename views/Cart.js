@@ -1,10 +1,10 @@
 import React from 'react'
 import { StyleSheet, Text, View } from 'react-native'
 
-export const Home = () => {
+export const Cart = () => {
   return (
     <View style={styles.container}>
-      <Text>Home Screen</Text>
+      <Text>Cart Screen</Text>
     </View>
   )
 }

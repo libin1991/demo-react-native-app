@@ -1,6 +1,7 @@
 import { StatusBar } from "expo-status-bar";
 import { useState } from "react";
 import { StyleSheet, Text, View, Button } from "react-native";
+import { BottomNav } from "./component/BottomNav";
 import { Header } from "./component/Header";
 
 export default function App() {
@@ -16,13 +17,14 @@ export default function App() {
   return (
     <>
     <Header />
-    <View style={styles.container}>
+    <BottomNav />
+    {/* <View style={styles.container}>
       <Text style={styles.title}>Hello my name is {name}</Text>
       <View style={styles.btncontainer}>
         <Button title="Click me" onPress={changename} />
       </View>
-      <StatusBar style="auto" />
-    </View>
+    </View> */}
+    <StatusBar style="auto" />
     </>
   );
 }
